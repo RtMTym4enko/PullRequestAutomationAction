@@ -1,0 +1,10 @@
+name: 'PR_AutomationAction'
+description: 'Automatically fill out PR request_fields'
+inputs:
+  repoToken: 
+    description: 'Repository token'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: 'node16'
+  main: 'index.js'
